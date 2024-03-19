@@ -14,10 +14,6 @@ class LoginEkraniFragment : Fragment() {
         binding = FragmentLoginEkraniBinding.inflate(inflater,container,false)
 
 
-        val sp = getSharedPreferences("KisiselBilgiler", android.content.Context.MODE_PRIVATE)
-
-
-
         return binding.root
     }
 
