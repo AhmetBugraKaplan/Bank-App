@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="172dp">
+
+            <Button
+                android:id="@+id/buttonActions"
+                android:layout_width="128dp"
+                android:layout_height="121dp"
+                android:backgroundTint="#F1EBEB"
+                android:textAlignment="gravity"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:cornerRadius="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5"
+                tools:layout_editor_absoluteX="17dp" />
+
+            <TextView
+                android:id="@+id/aksiyonIsim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Cüzdanım"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/buttonActions"
+                app:layout_constraintHorizontal_bias="0.543"
+                app:layout_constraintStart_toEndOf="@+id/buttonActions"
+                app:layout_constraintTop_toBottomOf="@id/aksiyonResim"
+                tools:layout_editor_absoluteY="184dp" />
+
+            <ImageView
+                android:id="@+id/aksiyonResim"
+                android:layout_width="59dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintLeft_toLeftOf="@+id/buttonActions"
+                app:layout_constraintTop_toTopOf="@+id/buttonActions"
+                app:srcCompat="@drawable/wallet"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="119dp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:backgroundTint="#F1EBEB"
+
+                android:textStyle="bold"
+                app:cornerRadius="12sp"
+                tools:layout_editor_absoluteX="193dp"
+                tools:layout_editor_absoluteY="28dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Finans"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@+id/button"
+                tools:layout_editor_absoluteY="100dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

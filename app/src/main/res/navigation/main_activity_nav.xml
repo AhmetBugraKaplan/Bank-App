@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/anaSayfaFragment">
+
+    <fragment
+        android:id="@+id/anaSayfaFragment"
+        android:name="com.example.bankaprojesi2.AnaSayfaFragment"
+        android:label="fragment_ana_sayfa"
+        tools:layout="@layout/fragment_ana_sayfa" >
+        <action
+            android:id="@+id/paraTransferSayfasinaGecis"
+            app:destination="@id/paraTransferSayfaFragment" />
+        <action
+            android:id="@+id/cuzdanimSayfasiGecis"
+            app:destination="@id/cuzdanimSayfaFragment" />
+        <action
+            android:id="@+id/portfoyFragmentGecis"
+            app:destination="@id/portfoyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paraTransferSayfaFragment"
+        android:name="com.example.bankaprojesi2.ParaTransferSayfaFragment"
+        android:label="fragment_para_transfer_sayfa"
+        tools:layout="@layout/fragment_para_transfer_sayfa" />
+    <fragment
+        android:id="@+id/cuzdanimSayfaFragment"
+        android:name="com.example.bankaprojesi2.CuzdanimSayfaFragment"
+        android:label="fragment_cuzdanim_sayfa"
+        tools:layout="@layout/fragment_cuzdanim_sayfa" />
+    <fragment
+        android:id="@+id/portfoyFragment"
+        android:name="com.example.bankaprojesi2.PortfoyFragment"
+        android:label="fragment_portfoy"
+        tools:layout="@layout/fragment_portfoy" />
+</navigation>

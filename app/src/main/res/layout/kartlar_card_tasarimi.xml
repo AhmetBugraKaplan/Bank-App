@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#0288D1"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="357dp"
+                android:layout_height="201dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="27dp"
+                android:background="@drawable/color_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textViewBakiye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="80dp"
+                android:text="52$"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/view"
+                app:layout_constraintStart_toStartOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/textViewKartNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:text="5178 4574 1616 8082"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/view"
+                app:layout_constraintLeft_toLeftOf="@id/view" />
+
+            <ImageView
+                android:id="@+id/imageViewKartTuru"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintLeft_toLeftOf="@id/view"
+                app:layout_constraintTop_toTopOf="@id/view"
+                app:srcCompat="@drawable/visa"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="50dp" />
+
+            <TextView
+                android:id="@+id/textViewKartTuruText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="50dp"
+                android:text="Okul Yemek Kartı"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/view"
+                app:layout_constraintLeft_toLeftOf="@id/view" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
